@@ -7,7 +7,7 @@
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -16,7 +16,16 @@
             <router-link to="/" class="nav-link active" aria-current="page" href="#">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/" class="nav-link" href="#">Link</router-link>
+            <router-link to="/" class="nav-link" href="#">About</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/" class="nav-link" href="#">Products</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/" class="nav-link" href="#">Contact</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/" class="nav-link" href="#">Admin</router-link>
           </li>
         </ul>
       </div>
@@ -28,16 +37,27 @@
 
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 .navbar.bg-body-tertiary.fixed-top {
     background-color: black !important ;
 }
 
 .navbar-brand {
     color: rgb(186, 160, 12) !important;
+    font-family: 'Cinzel', serif;
 }
 
 .nav-link {
     color: rgb(186, 160, 12) !important;
+    font-family: 'Cinzel', serif !important;
+}
+
+.btn-close {
+  background-color: rgb(163, 148, 11) !important;
+}
+
+.navbar-toggler {
+  background-color: rgb(163, 148, 11) !important;
 }
 
 .offcanvas-body {
@@ -50,6 +70,7 @@
 }
 
 .offcanvas-title {
+  font-family: 'Cinzel', serif;
     color: rgb(186, 160, 12) !important;
 }
 </style>
