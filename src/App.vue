@@ -14,6 +14,10 @@
   color: #2c3e50;
 }
 
+body {
+  background-color: black !important;
+}
+
 nav {
   padding: 30px;
 }
